@@ -26,15 +26,36 @@
             <li><a href="#time">timeings</a></li>
             <li><a href="https://wa.me/message/2XWHNGL62CMQA1">Contact Us</a></li>
         </ul>
-        <!-- <div class="rightNav v-class-resp">
-            <input type="text" name="search" id="search">
-            <button class="btn btn-sm">Search</button>
-        </div> -->
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+        <nav class="nav">
+            <div class="nav-links-container">
+                <a type="button" class="nav-close" onclick="toggleNav()" href="#" class="nav__link">
+                    <span class="nav__text">home</span>
+                </a>
+                <a href="#services" type="button" class="nav-close" onclick="toggleNav()" class="nav__link">
+                    <span class="nav__text">Services</span>
+                </a>
+                <a type="button" class="nav-close" onclick="toggleNav()" href="#time" class="nav__link">
+                    <span class="nav__text">timeings</span>
+                </a>
+                <a type="button" class="nav-close" onclick="toggleNav()" href="https://wa.me/message/2XWHNGL62CMQA1" class="nav__link">
+                    <span class="nav__text">Contact Us</span>
+                </a>
+            </div>
+        </nav>
+        <main class="main">
+            <button class="btnnav" onclick="toggleNav()">
+                    <div name="close-outline" size="large" class="line"></div>
+                    <div name="close-outline" size="large" class="line"></div>
+                    <div name="close-outline" size="large" class="line"></div></button>
+        </main>
+        <script>
+            function toggleNav() {
+                document.body.classList.toggle("nav-open");
+            }
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     </nav>
 
     <section class="background firstSection">
@@ -54,29 +75,11 @@
             </div>
         </div>
     </section>
-
-    <!-- <section id="about" class="section">
-        <div class="paras">
-            <p class="sectionTag text-big">The end of your search is here</p>
-            <p class="sectionSubTag text-small">ducation is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research. Education frequently takes
-                place under the guidance of educators, however learners can also educate themselves.[1] Education can take place in formal or informal settings and any experience that has a formative effect on the way one thinks, feels, or acts may be
-                considered educational. The methodology of teaching is called pedagogy.education in zambia </p>
-        </div>
-        <div class="thumbnail">
-            <img src="https://source.unsplash.com/900x900/?coding,apple" alt="laptop image" class="imgFluid">
-        </div>
-    </section> -->
-
-    <!-- <section class="section section-left" id="about">
-        <div class="paras">
-            <p class="sectionTag text-big">Transforming Education in India</p>
-            <p class="sectionSubTag text-small">Many public schools provide a free education through the government. Parents may send their own children to a private schools, but they must pay for it. In some poorer places, some children cannot go to school, because their countries do not
-                make education available in their countries, or because their families do not have enough money, or because the children have to work for money, or because the society have negative prejudice on education for girls.The city of Alexandria
-                in Egypt, established in 330 BCE, became the successor to Athens as the intellectual cradle of Ancient Greece. There, the great Library of Alexandria was built in the 3rd century BCE. European civilizations suffered a collapse of literacy
-                and organization following the fall of Rome in CE 476.</p>
-        </div>
-        <div class="thumbnail">
-            <img src="https://source.unsplash.com/900x900/?coding,apple,html" alt="laptop image" class="imgFluid">
+    <!-- <section id="about">
+        <div>
+            <p>
+                to be added in future#atharwa135.
+            </p>
         </div>
     </section> -->
     <section class="section" id="services">
@@ -100,10 +103,6 @@
                     <li>Web hosting</li>
                 </ul>
             </p>
-
-            <!-- <p class="sectionSubTag text-small">
-                Matteo Ricci (left) and Xu Guangqi (right) in the Chinese edition of Euclid's Elements published in 1607 Plato founded the Academy in Athens, the first institution of higher learning in Europe.
-            </p> -->
         </div>
         <div class="thumbnail">
             <img src="https://source.unsplash.com/900x900/?javascript,apple, nature, happy" alt="laptop image" class="imgFluid">
