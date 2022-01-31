@@ -290,3 +290,7 @@ a.text-center {
     height: 4px;
     margin: 5px 3px;
 }
+
+p.text-footer {
+    margin-top: 340px;
+}
