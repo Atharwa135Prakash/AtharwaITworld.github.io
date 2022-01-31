@@ -1,34 +1,42 @@
 @media only screen and (max-width: 1140px) {
     .nav-list {
         flex-direction: column;
+        color: rgb(172, 250, 15);
+        display: none;
+    }
+    .nav-list li a {
+        color: rgb(172, 250, 15);
     }
     .navbar {
         height: 447px;
         flex-direction: column;
         transition: all 0.7s ease-out;
+        color: rgb(172, 250, 15);
+    }
+    .logo .navtitle {
+        display: none;
+        content: none;
     }
     .topimg {
         border-radius: 20px;
     }
     .rightNav {
         text-align: center;
+        display: block;
     }
     .box-main {
         flex-direction: column-reverse;
         max-width: 100%;
     }
-    #search {
-        width: 100%;
-    }
     .burger {
         display: block;
     }
     .h-nav-resp {
-        height: 72px;
+        height: 65px;
     }
-    .v-class-resp {
-        opacity: 0;
-    }
+    /* .v-class-resp {
+        opacity: 20;
+    } */
     .section {
         flex-direction: column-reverse;
     }
@@ -44,4 +52,81 @@
     .paras {
         padding: 0px;
     }
+}
+
+
+/* ======= */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .main {
+    transform: translateX(350px);
+}
+
+.nav {
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333333;
+    transform: translateX(-350px);
+    transition: transform 0.2s;
+    overflow: hidden;
+    display: block;
+}
+
+.btnnav {
+    background: rgb(24, 116, 85);
+    display: block;
+}
+
+.nav-close {
+    background: none;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 15px 25px;
+    color: #dddddd;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.nav-close:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-links-container {
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: rgb(24, 116, 85);
+}
+
+.nav__text {
+    font-size: 22px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.main {
+    transition: transform 0.2s;
+    text-align: right;
 }
