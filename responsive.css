@@ -130,3 +130,7 @@ body {
     transition: transform 0.2s;
     text-align: right;
 }
+
+p.text-footer {
+    margin-top: 275px;
+}
