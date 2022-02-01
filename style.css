@@ -284,6 +284,19 @@ a.text-center {
     top: 15px;
 }
 
+.social a img {
+    height: 15px;
+    /* width: 15px; */
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+    /* align-self: center; */
+}
+
+.social {
+    text-align: center;
+}
+
 .line {
     width: 33px;
     background-color: rgb(172, 250, 15);
@@ -291,6 +304,7 @@ a.text-center {
     margin: 5px 3px;
 }
 
-p.text-footer {
-    margin-top: 40px;
-}
+
+/* p.text-footer {
+    margin-top: 340px;
+} */
